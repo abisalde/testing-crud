@@ -13,7 +13,7 @@ app.use('/intern', internRouter)
 
 const databaseURL = process.env.MONGODB_URI
 
-mongoose.connect("mongodb+srv://webdev:kcV7ipiTk9DDJG6@crud.vzghg.mongodb.net/internDB?retryWrites=true&w=majority", {
+mongoose.connect(databaseURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
     })
