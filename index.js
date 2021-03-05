@@ -25,7 +25,7 @@ mongoose.connect(databaseURL, {
     });
 
 app.get('/' , (req, res) => {
-    res.json("CRUD running")
+    res.json("Testing CRUD Api with Mongo ATLAS")
 });
 
 const PORT = 1029
