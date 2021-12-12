@@ -26,11 +26,15 @@ mongoose
         );
     });
 
-app.get('/', (req, res) => {
-    res.json('CRUD running');
+
+app.get('/' , (req, res) => {
+    res.json("Testing CRUD Api with Mongo ATLAS")
+
 });
 
 const PORT = 1029;
 app.listen(PORT, () => {
-    console.log('App listening on Port ' + PORT);
+
+    console.log("App listening on Port " + PORT)
+
 });
